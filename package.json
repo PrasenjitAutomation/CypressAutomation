@@ -1,0 +1,28 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "CypressAutomation",
+  "main": "index.js",
+  "scripts": {
+       "Test:Login":"npx cypress run --spec 'cypress\\e2e\\Tests\\LoginTest.cy.js'",
+       "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrasenjitAutomation/CypressAutomation.git"
+  },
+  "author": "Prasenjit Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrasenjitAutomation/CypressAutomation/issues"
+  },
+  "homepage": "https://github.com/PrasenjitAutomation/CypressAutomation#readme",
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "mochawesome-merge": "^4.3.0"
+  }
+}
