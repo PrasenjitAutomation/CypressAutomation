@@ -12,11 +12,13 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
+        with:
+         command: npm run Test:Login
         
         
         - name: Upload Cypress report
         uses: actions/upload-artifact@v3
         with:
           name: cypress-report
-          path: cypress/reports/report.html
+          path: cypress/reports/html
         
