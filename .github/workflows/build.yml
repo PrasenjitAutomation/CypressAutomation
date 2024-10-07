@@ -12,5 +12,9 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
+        - uses: actions/upload-artifact@v4
+        with:
+        name: Mocha Report
+        path: cypress/reports/html # or path/to/artifact
         
         
