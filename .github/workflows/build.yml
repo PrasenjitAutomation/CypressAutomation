@@ -16,6 +16,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
+        name: Mocha HTML Report
         path: cypress/reports/html # or path/to/artifact
         
         
